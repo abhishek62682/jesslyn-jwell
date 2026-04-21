@@ -215,7 +215,7 @@
 
         <section id="about-section">
           <div
-            class="w-full h-screen relative bg-dark-red flex flex-col justify-center gap-[160px]"
+            class="w-full h-screen  relative bg-dark-red hidden md:flex flex-col justify-center gap-[160px]"
           >
             <div class="relative flex justify-center">
               <div class="relative">
@@ -341,15 +341,15 @@
           <div
             class="w-full bg-cream rounded-[6px] pt-[64px] px-[32px] pb-[32px]"
           >
-            <div class="container-frame grid grid-cols-12">
+            <div class="container-frame grid gap-8 md:gap-0 grid-cols-12">
               <h2
-                class="font-secondary text-[64px] max-w-[700px] col-span-8 leading-[64px]"
+                class="font-secondary leading-[8vw] text-[64px] max-w-[700px] col-span-12 md:col-span-8 leading-[64px]"
               >
                 CLARIEL IS A FINE JEWELRY HOUSE GUIDED BY CLARITY AND PURPOSE.
                 EACH PIECE IS SHAPED THROUGH REFINED MATERIALS AND DESIGN.
               </h2>
 
-              <div class="flex flex-col col-span-4 justify-between">
+              <div class="flex flex-col col-span-12 md:col-span-4 justify-between">
                 <div
                   class="flex flex-col space-y-6 text-[#141313] font-primary text-md leading-md"
                 >
@@ -386,7 +386,7 @@
                   </ul>
                 </div>
 
-                <div class="hero-bottom-content">
+                <div class="hero-bottom-content mt-10 md:mt-0">
                   <button
                     class="uppercase text-[#faf5eb] rounded-[100px] px-[32px] py-[20px] bg-black font-primary text-sm leading-sm"
                   >
@@ -427,9 +427,9 @@
           class="w-full h-screen flex flex-col justify-between px-[40px] py-[48px] pb-[24px]"
         >
           <div class="footer-top-frame grid grid-cols-12 justify-center">
-            <div class="footer-top-left flex col-span-4">
+            <div class="footer-top-left flex flex-wrap md:flex-nowrap gap-8 col-span-4">
               <ul
-                class="font-secondary max-w-[220px] w-full font-normal uppercase text-[#faf5eb] text-[24px] leading-[24px]"
+                class="font-secondary max-w-full md:max-w-[220px] w-full font-normal uppercase text-[#faf5eb] text-[24px] leading-[24px]"
               >
                 <li class="py-1.5">shop</li>
                 <li class="py-1.5">philosophy</li>
@@ -447,9 +447,9 @@
               </ul>
             </div>
 
-            <div class="col-span-4"></div>
+            <div class="md:col-span-4"></div>
 
-            <div class="footer-top-right flex flex-col gap-6 col-span-4">
+            <div class="footer-top-right flex flex-col gap-6 col-span-6 md:col-span-4">
               <h3
                 class="font-secondary w-full font-normal uppercase text-[#faf5eb] text-[24px] leading-[24px]"
               >
@@ -481,28 +481,28 @@
 
           <div class="footer-bottom-frame">
             <div
-              class="shop-info-label font-primary uppercase flex gap-8 font-normal text-[#faf5eb99] text-[16px] leading-[19px]"
+              class="shop-info-label font-primary justify-center uppercase flex gap-8 font-normal text-[#faf5eb99] text-[16px] leading-[19px]"
             >
               <span>jesslyn@support.in</span>
               <span>+33 1 42 68 53 90</span>
             </div>
 
             <h3
-              class="font-secondary text-cream flex justify-center items-center uppercase text-[18vw] leading-[18vw]"
+              class="font-secondary text-cream flex justify-center items-center uppercase text-[8vw] md:text-[18vw] leading-[18vw]"
             >
               jesslyn jwell
             </h3>
 
-            <div class="sub-footer mt-8 flex justify-between items-center">
+            <div class="sub-footer flex-wrap  gap-8 mt-8 flex justify-between items-center">
               <ul
-                class="flex gap-8 font-primary items-center text-[#faf5eb99] text-[14px] leading-[16px]"
+                class="flex gap-8 font-primary w-full flex-wrap justify-center items-center text-[#faf5eb99] text-[14px] leading-[16px]"
               >
                 <li class="text-[#faf5eb]">© 2026 Clariel</li>
                 <li>Back To Top</li>
               </ul>
 
               <ul
-                class="flex gap-8 items-center font-primary uppercase text-[#faf5eb99] text-[14px] leading-[16px]"
+                class="flex gap-8 flex-wrap items-center justify-center w-full font-primary uppercase text-[#faf5eb99] text-[14px] leading-[16px]"
               >
                 <li>Privacy Policy</li>
                 <li>Terms & Conditions</li>
