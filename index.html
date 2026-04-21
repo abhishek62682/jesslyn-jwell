@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | JESSLYN JWELL</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-dark-red: #8c2923;
+        --color-cream: #faf5eb;
+        --color-cblack: #14131399;
+        --color-grey: #14131366;
+
+        --font-primary: "Hedvig Letters Sans", sans-serif;
+        --font-secondary: "Instrument Serif", serif;
+
+        --text-xsm: 12px;
+
+        --text-sm: 14px;
+        --text-md: 16px;
+        --leading-md: 19px;
+        --leading-sm: 16px;
+        --text-large: 32px;
+        --leading-large: 32px;
+
+        --text-xlarge: 120px;
+        --leading-xlarge: 115px;
+      }
+
+      .product-filter.active {
+        font-size: 6vw;
+        line-height: 6vw;
+        color: #000;
+      }
+
+      .product-filter.inactive {
+        font-size: 4vw;
+        line-height: 4vw;
+        color: #14131399;
+      }
+
+      .w-md {
+        width: 200px;
+        overflow: hidden;
+
+
+      }
+
+      .w-md > img{
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+      }
+
+      .w-md:hover > img{
+
+        scale:1.2;
+
+      }
+
+      ::selection {
+        color: #faf5eb;
+        background-color: #8c2923;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="group-section relative z-[10]">
+        <div class="group-hero-about">
+          <section
+            data-scroll
+            data-scroll-speed="2"
+            id="hero-section"
+            class="w-full bg-dark-red relative p-2 flex justify-center "
+          >
+            <div
+              class="w-full hero-container rounded-[8px] overflow-hidden flex-col md:flex-row flex bg-cream"
+            >
+              <div
+                class="w-full md:w-1/2 h-[800px] md:h-screen flex flex-col justify-between items-center pt-[28px] px-[32px] pb-[64px]"
+              >
+                <div class="top-nav w-full flex justify-between items-center">
+                  <span
+                    class="font-secondary font-normal color-black leading-large text-large"
+                    >JESSLYN JWELL</span
+                  >
+
+                  <div
+                    class="uppercase text-end text-cblack leading-sm text-sm font-normal"
+                  >
+                    <p>Fine Jewelry</p>
+                    <p>since 2009</p>
+                  </div>
+                </div>
+
+                <div
+                  class="hero-top-content pt-[48px] space-y-3 flex flex-col items-center uppercase"
+                >
+                  <h2
+                    class="font-secondary text-[20vw] leading-[21vw] md:text-xlarge md:leading-xlarge"
+                  >
+                    Refined <br />
+                    Jewelry
+                  </h2>
+
+                  <div
+                    class="text-cblack flex gap-2 items-center text-center text-md leading-md font-normal font-primary"
+                  >
+                    <span>Jewelry House</span>
+                    <span class="line w-3 h-[1px] bg-grey inline-block"></span>
+                    <span>made in india</span>
+                  </div>
+                </div>
+
+                <div
+                  class="hero-middle-content font-primary text-[#141313] text-center uppercase text-md leading-md w-full md:max-w-[380px] mx-auto"
+                >
+                  <p>
+                    Crafted to captivate, our jewellery embodies timeless elegance and modern luxury. Each piece is meticulously
+                    designed to celebrate individuality
+                  </p>
+                </div>
+
+                <div class="hero-bottom-content">
+                  <button
+                    class="uppercase text-[#faf5eb] rounded-[100px] px-[32px] py-[20px] bg-black font-primary text-sm leading-sm"
+                  >
+                    shop the collection
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-1/2 h-[600px] md:h-full relative overflow-hidden"
+              >
+                <div
+                  class="fixed-menu-bar hidden md:flex gap-2 items-center z-[99] absolute top-[28px] right-[32px]"
+                >
+                  <div
+                    class="search-wrapper flex justify-center items-center rounded-full bg-dark-red size-[40px]"
+                  >
+                    <i
+                      data-lucide="search"
+                      class="w-4 h-4 font-normal text-primary text-white"
+                    ></i>
+                  </div>
+
+                  <button
+                    class="menu-button shrink-0 text-xsm uppercase bg-[#faf5eb] rounded-[100px] py-[12px] px-[16px] font-primary font-normal leading-normal"
+                  >
+                    Menu
+                  </button>
+                </div>
+                <img
+                  class="absolute inset-0 w-full h-full object-cover"
+                  src="https://framerusercontent.com/images/g5Y7KDTd2Ob1sGOv8ASctYams.png?width=1024&height=1536"
+                  alt=""
+                />
+              </div>
+            </div>
+          </section>
+
+          <section
+            data-scroll
+            data-scroll-speed="-1"
+            id="product-section"
+            class="p-2 bg-dark-red"
+          >
+            <div
+              class="w-full rounded-[8px] py-[64px] px-[32px] overflow-hidden items-start gap-10 flex flex-col bg-cream relative z-[2]"
+            >
+              <div class="product-filter-tab h-[60px] flex items-end gap-8">
+                <div
+                  class="product-filter shrink-0 transition-all duration-300 active relative font-secondary uppercase   text-[64px] leading-[64px]"
+                >
+                  Rings
+                  <span
+                    class="text-[#14131399] absolute top-0 right-0 translate-x-[100%] text-sm leading-sm font-primary"
+                    >6</span
+                  >
+                </div>
+                <div
+                  class="product-filter shrink-0 transition-all duration-300 inactive relative font-secondary uppercase text-[64px] leading-[64px]"
+                >
+                  NECKLACES
+                  <span
+                    class="text-[#14131399] absolute top-0 translate-x-[100%] text-sm leading-sm font-primary"
+                    >6</span
+                  >
+                </div>
+                <div
+                  class="product-filter shrink-0 transition-all duration-300 inactive relative font-secondary uppercase text-[64px] leading-[64px]"
+                >
+                  BRACELETS
+                  <span
+                    class="text-[#14131399] absolute top-0 translate-x-[100%] text-sm leading-sm font-primary"
+                    >9</span
+                  >
+                </div>
+              </div>
+
+              <div class="product-listing w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-3">
+                <!-- JS renders here -->
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section id="about-section">
+          <div
+            class="w-full h-screen relative bg-dark-red flex flex-col justify-center gap-[160px]"
+          >
+            <div class="relative flex justify-center">
+              <div class="relative">
+                <div class="group-text">
+                  <div
+                    class="reveal-text-wrapper relative h-[108px] overflow-hidden"
+                  >
+                    <div
+                      class="reveal-text  reveal-text-one text-center text-white font-secondary  md:text-[112px] md:leading-[108px] text-[2vw] uppercase"
+                    >
+                      <h2>design begins</h2>
+                    </div>
+
+                    <div
+                      class="reveal-text reveal-text-one text-white text-center font-secondary text-[112px] leading-[108px] uppercase"
+                    >
+                      <h2>refined for</h2>
+                    </div>
+                  </div>
+
+                  <div
+                    class="text-[#faf5eb99] justify-center flex gap-2 uppercase items-center text-center text-sm leading-md font-normal font-primary"
+                  >
+                    <span>India</span>
+<span class="line w-3 h-[1px] bg-[#faf5eb99] inline-block"></span>
+<span>Handcrafted</span>
+                  </div>
+
+                  <div
+                    class="reveal-text-wrapper relative h-[108px] overflow-hidden"
+                  >
+                    <div
+                      class="reveal-text reveal-text-two text-center text-white font-secondary text-[112px] leading-[108px] uppercase"
+                    >
+                      with restraint
+                    </div>
+
+                    <div
+                      class="reveal-text reveal-text-two text-center text-white font-secondary text-[112px] leading-[108px] uppercase"
+                    >
+                      craftmanship
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="down-text absolute bottom-0 text-[#faf5eb99] font-primary text-sm leading-sm uppercase left-0 translate-y-[100%]"
+                >
+                  EST 2009
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex justify-center">
+              <div class="relative">
+                <div class="group-text">
+                  <div
+                    class="reveal-text-wrapper relative h-[108px] overflow-hidden"
+                  >
+                    <div
+                      class="reveal-text reveal-text-three text-center text-white font-secondary text-[112px] leading-[108px] uppercase"
+                    >
+                      <h2>Beauty Follows</h2>
+                    </div>
+
+                    <div
+                      class="reveal-text reveal-text-three text-center text-white font-secondary text-[112px] leading-[108px] uppercase"
+                    >
+                      <h2>refined for</h2>
+                    </div>
+                  </div>
+
+                  <div
+                    class="text-[#faf5eb99] justify-end flex gap-2 uppercase items-center text-center text-sm leading-md font-normal font-primary"
+                  >
+                    <span>crafted in india</span>
+                  </div>
+
+                  <div
+                    class="reveal-text-wrapper relative h-[108px] overflow-hidden"
+                  >
+                    <div
+                      class="reveal-text reveal-text-four reveal-text-four text-center text-white font-secondary text-[112px] leading-[108px] uppercase"
+                    >
+                      true purpose
+                    </div>
+
+                    <div
+                      class="reveal-text reveal-text-four text-white font-secondary text-[112px] leading-[108px] uppercase"
+                    >
+                      modern living
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="down-text absolute bottom-0 text-[#faf5eb99] font-primary text-sm leading-sm uppercase left-[16%] translate-y-[100%]"
+                >
+                  jewellery house
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="overlap-frame absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[224px] overflow-hidden"
+            >
+              <img
+                class="w-full move-up h-full object-cover"
+                src="https://framerusercontent.com/images/M8EKr1NjFr4nKrbTNfaynjj8.jpg?scale-down-to=1024&width=1920&height=1920"
+                alt=""
+              />
+
+              <img
+                class="w-full move-up h-full object-cover"
+                src="https://framerusercontent.com/images/fTp9w2nNSBQuOTtIuo4JIl3vt0.jpg?scale-down-to=1024&width=1920&height=1440"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="about-company" class="px-2 bg-dark-red pb-2">
+          <div
+            class="w-full bg-cream rounded-[6px] pt-[64px] px-[32px] pb-[32px]"
+          >
+            <div class="container-frame grid grid-cols-12">
+              <h2
+                class="font-secondary text-[64px] max-w-[700px] col-span-8 leading-[64px]"
+              >
+                CLARIEL IS A FINE JEWELRY HOUSE GUIDED BY CLARITY AND PURPOSE.
+                EACH PIECE IS SHAPED THROUGH REFINED MATERIALS AND DESIGN.
+              </h2>
+
+              <div class="flex flex-col col-span-4 justify-between">
+                <div
+                  class="flex flex-col space-y-6 text-[#141313] font-primary text-md leading-md"
+                >
+                  <p>
+                    CLEAR PRINCIPLES GUIDE <br />
+                    EVERY DECISION WE MAKE.
+                  </p>
+
+                  <ul class="space-y-1">
+                    <li class="flex items-center gap-2">
+                      <span
+                        class="dot inline-block size-[5px] bg-dark-red"
+                      ></span>
+                      CLARITY IN THOUGHTFUL DESIGN
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span
+                        class="dot inline-block size-[5px] bg-dark-red"
+                      ></span>
+                      INTEGRITY IN REFINED MATERIALS
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span
+                        class="dot inline-block size-[5px] bg-dark-red"
+                      ></span>
+                      BALANCE IN FORM AND PROPORTION
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span
+                        class="dot inline-block size-[5px] bg-dark-red"
+                      ></span>
+                      LONGEVITY BEYOND PASSING TRENDS
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="hero-bottom-content">
+                  <button
+                    class="uppercase text-[#faf5eb] rounded-[100px] px-[32px] py-[20px] bg-black font-primary text-sm leading-sm"
+                  >
+                    shop the collection
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-4 h-screen mt-10">
+              <div class="col-span-8 relative rounded-[8px] overflow-hidden">
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://framerusercontent.com/images/O7kEJOScuxGBLWKKMOFzegMzE.jpg?width=1920&height=1280"
+                  alt=""
+                />
+              </div>
+              <div class="col-span-4 relative rounded-[8px] overflow-hidden">
+                <video
+                  class="absolute inset-0 w-full h-full object-cover"
+                  autoplay
+                  loop
+                  muted
+                  src="https://framerusercontent.com/assets/J8My39E6VmvTX4ptOTY1PucoOhU.mp4"
+                ></video>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section
+        class="w-full h-screen pointer-events-none !bg-transparent"
+      ></section>
+
+      <section class="fixed top-0 left-0" id="footer-section ">
+        <footer
+          class="w-full h-screen flex flex-col justify-between px-[40px] py-[48px] pb-[24px]"
+        >
+          <div class="footer-top-frame grid grid-cols-12 justify-center">
+            <div class="footer-top-left flex col-span-4">
+              <ul
+                class="font-secondary max-w-[220px] w-full font-normal uppercase text-[#faf5eb] text-[24px] leading-[24px]"
+              >
+                <li class="py-1.5">shop</li>
+                <li class="py-1.5">philosophy</li>
+                <li class="py-1.5">artistry</li>
+                <li class="py-1.5">about</li>
+              </ul>
+
+              <ul
+                class="font-secondary max-w-[220px] w-full font-normal uppercase text-[#faf5eb] text-[24px] leading-[24px]"
+              >
+                <li class="py-1.5">facebook</li>
+                <li class="py-1.5">instagram</li>
+                <li class="py-1.5">x (twitter)</li>
+                <li class="py-1.5">tiktok</li>
+              </ul>
+            </div>
+
+            <div class="col-span-4"></div>
+
+            <div class="footer-top-right flex flex-col gap-6 col-span-4">
+              <h3
+                class="font-secondary w-full font-normal uppercase text-[#faf5eb] text-[24px] leading-[24px]"
+              >
+                stay connected
+              </h3>
+
+              <p
+                class="font-primary mt-2 w-full font-normal uppercase text-[#faf5eb99] text-[14px] leading-[16px]"
+              >
+                New releases, collections, <br />
+                and selected brand updates.
+              </p>
+
+              <div class="input-frame-wrapper flex">
+                <input
+                  type="text"
+                  class="border-[1px] w-full mr-2 hover:outline-none font-primary text-white text-[14px] py-5 px-6 rounded-[100px] border-[#faf5eb33]"
+                  placeholder="YOUR EMAIL"
+                />
+
+                <button
+                  class="uppercase text-[#faf5eb] rounded-[100px] px-[32px] py-[20px] bg-black font-primary text-sm leading-sm"
+                >
+                  subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom-frame">
+            <div
+              class="shop-info-label font-primary uppercase flex gap-8 font-normal text-[#faf5eb99] text-[16px] leading-[19px]"
+            >
+              <span>jesslyn@support.in</span>
+              <span>+33 1 42 68 53 90</span>
+            </div>
+
+            <h3
+              class="font-secondary text-cream flex justify-center items-center uppercase text-[18vw] leading-[18vw]"
+            >
+              jesslyn jwell
+            </h3>
+
+            <div class="sub-footer mt-8 flex justify-between items-center">
+              <ul
+                class="flex gap-8 font-primary items-center text-[#faf5eb99] text-[14px] leading-[16px]"
+              >
+                <li class="text-[#faf5eb]">© 2026 Clariel</li>
+                <li>Back To Top</li>
+              </ul>
+
+              <ul
+                class="flex gap-8 items-center font-primary uppercase text-[#faf5eb99] text-[14px] leading-[16px]"
+              >
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+                <li>Shipping & Returns</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script src="./js/index.js"></script>
+
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+
+    <script>
+      // Initialize Lenis
+      const lenis = new Lenis({
+        autoRaf: true,
+      });
+
+      // Listen for the scroll event and log the event data
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const t1 = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#about-section",
+            start: "top top",
+            end: () =>
+              "+=" +
+              document.querySelector("#about-section").offsetHeight * 1.4,
+            scrub: 2,
+            pin: true,
+            invalidateOnRefresh: true,
+          },
+        });
+
+        t1.to(
+          [".reveal-text-one", ".reveal-text-two"],
+          {
+            y: -108,
+            ease: "power2.out",
+          },
+          "a",
+        )
+
+          .to(
+            [".reveal-text-three", ".reveal-text-four"],
+            {
+              y: -108,
+              ease: "power2.out",
+            },
+            "b",
+          )
+
+          .to(".move-up", {
+            y: -224,
+            ease: "power2.out",
+          });
+      });
+
+      // const t1 = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: ".group-hero-about",
+      //     start: "top top",
+      //     end: "140% 50%",
+      //     scrub: 2,
+      //     markers: true,
+      //     pin: true,
+      //   },
+      // });
+
+      // t1.to(".hero-container",{
+      //   scale:0.8,
+      //   opacity:0.4
+      // },"a");
+
+      const tl = gsap.timeline({
+        defaults: {
+          ease: "power3.out",
+          duration: 1,
+        },
+      });
+
+      // 👉 NAV
+      tl.from(".top-nav span, .top-nav div p", {
+        y: 20,
+        opacity: 0,
+        stagger: 0.08,
+      });
+
+      // 👉 HERO TITLE
+      tl.from(
+        ".hero-top-content h2",
+        {
+          yPercent: 50,
+          opacity: 0,
+        },
+        "-=0.5",
+      );
+
+      // 👉 SUBTEXT (Jewelry House line)
+      tl.from(
+        ".hero-top-content div span",
+        {
+          y: 20,
+          opacity: 0,
+          stagger: 0.05,
+        },
+        "-=0.6",
+      );
+
+      // 👉 MIDDLE TEXT (SplitText lines)
+      let split = SplitText.create(".hero-middle-content p", {
+        type: "lines",
+        mask: "lines",
+      });
+
+      tl.from(
+        split.lines,
+        {
+          yPercent: 120,
+          opacity: 0,
+          stagger: 0.08,
+          duration: 1.2,
+          ease: "expo.out",
+        },
+        "-=0.6",
+      );
+
+      // 👉 BUTTON
+      tl.from(
+        ".hero-bottom-content button",
+        {
+          y: 30,
+          opacity: 0,
+          scale: 0.95,
+          duration: 0.8,
+        },
+        "-=0.5",
+      );
+    </script>
+  </body>
+</html>
